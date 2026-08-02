@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Based Combat</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js">
+  </script>
+
+  <link rel="stylesheet" href="TBCS.css">
+
+</head>
+
+<body>
+  <h1>Text Based Combat</h1>
+
+  <div 
+  id="outputBox-heading">
+  Super Advanced Battlemage Wizard Dragon Slaying Mastercomputer</div>
+
+  <div id="outputBox">
+    <p id="loading">loading...</p>
+  </div>
+
+  <div id="inputBox"></div>
+  <button id="return-button"
+    onclick="location.href='../homepage.html'">
+    Return
+  </button>
+    
+  <script 
+    type="py" 
+    src="combat.py" 
+    config='{"files": {"ui.py": "./ui.py"}}'>
+  </script>
+
+</body>
+
+</html>

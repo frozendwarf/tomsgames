@@ -1,0 +1,37 @@
+body  {
+	background-color: #002240;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;	
+  gap: 2vh;
+}
+
+h1, p, .game-title {
+	color: #eeeeee;
+}
+
+#games {
+	text-align: center;
+  display: flex;
+  gap: 1vh; 
+}
+
+#games h3 { 
+  margin-bottom: 15px; 
+}
+
+#games button {
+	padding: 4px 4px;
+	background-color: #dddddd;
+	border: none;
+	cursor: pointer;
+	transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+
+}
+
+#games button:hover {
+	box-shadow: 0 0 0 5px #dddddd;
+	transform: translateY(-5px);
+}

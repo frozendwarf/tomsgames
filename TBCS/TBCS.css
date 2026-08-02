@@ -1,0 +1,81 @@
+body {
+	background-color: #002240;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+h1, p {
+  color: #eeeeee;
+}
+
+button, input {
+  background-color: #002240;
+  color: #eeeeee;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #eeeeee;
+  padding: 10px 24px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+
+#outputBox, #outputBox-heading, #inputBox {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 675px;
+
+  background-color: #1a1a1a;
+  color: #eeeeee;
+  font-family: monospace;
+  font-size: 18px;
+
+  overflow-y: auto;
+  padding: 15px;
+  border: 2px solid #666666;  
+}
+
+#outputBox {
+  height: 50vh;
+
+}
+
+
+#outputBox-heading {
+  background-color: #090909;
+  text-align: center;
+  font-family: 'Courier New';
+}
+
+#inputBox button, #inputBox input {
+  background-color: #33516a;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#inputBox p {
+  font-family: "Courier New", Courier, monospace;
+  margin: 5px;
+}
+
+#playButton {
+  background-color: #33516a;
+  border: 4px solid #eeeeee;
+  font-size: 50px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#return-button {
+  margin: 50px;
+  order: 1;
+}

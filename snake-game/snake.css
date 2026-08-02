@@ -1,0 +1,45 @@
+body  {
+	background-color: #002240;
+    font-family: "Courier New", Courier, monospace;
+}
+
+button {
+ background-color: #002240;
+ color: #eeeeee;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  border: 4px solid #eeeeee;
+  padding: 10px 24px;
+  font-size: 18px;
+}
+
+
+h1, p {
+	color: #eeeeee;
+}
+
+#gamePage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	gap: 10px;
+}
+
+#description {
+	max-width: 500px;
+}
+
+#screen  {
+	max-width:  600px;
+	max-height: 600px;
+	width: 50%;
+	border: 8px solid #222222;
+}
+
+#return-button {
+	order: 1;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	
+<html>
+
+<head>
+	<title>The Button</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="the-button.css">
+</head>
+
+
+<body>
+	<!--
+		plan:
+			title that aligns with  rectangular canvas
+			button to go back to menu
+	-->
+	<div id="gamePage">
+		
+
+		<h1>The Button</h1>
+		<p style="text-align: center;">when the button turns green, click it!
+		<br> <br>
+		--The Button takes between 1 and 10 seconds to turn green--</p>
+		
+		<button id="reaction-button">
+			Start
+		</button>
+		
+		<button id="return-button"
+			onclick="location.href='../homepage.html'">
+			Return
+		</button>
+		
+		<div id="stats">
+			<h3 id="best-time">BEST: N/As</h3>
+			<p id="attempts">
+				stats go here
+			</p>
+		</div>
+	</div>
+	
+	
+	
+	
+	<script src="the-button.js"></script>
+</body>
+
+</html>

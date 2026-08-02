@@ -1,0 +1,50 @@
+body  {
+	background-color: #002240;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1, p {
+  color: #eeeeee;
+}
+
+button {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  border: 4px solid #222222;
+  padding: 10px 24px;
+  font-size: 18px;
+}
+
+
+
+#gamePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;	
+  gap: 2vh;
+}
+
+#reaction-button {
+  width : 25vw;
+  height : 25vw;
+  font-size: 5vw;
+  color: white;
+  background-color: black;
+  border: 8px solid #222222;
+}
+
+#stats {
+	padding: 0 1vh;
+	background-color: #F0F0F0;
+	border: 4px solid #222222;
+}
+
+#return-button {
+  order: 1;
+}
+
+#return-button:hover {
+  color: #BFFBFF;
+}
