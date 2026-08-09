@@ -583,7 +583,7 @@ async def main():
         ui.Output("choose enemy intelligence, where 1 is smartest and 6 is dumbest")
         intelligence = await ui.Ask()
         ui.Clear()
-        opponent.setIntelligence(int(intelligence))
+        opponents[opponent].setIntelligence(int(intelligence))
         await fight(player, opponents[opponent])
     
 
