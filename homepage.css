@@ -31,6 +31,11 @@ h1, p, .game-title {
 
 }
 
+#games button img {          
+  aspect-ratio: 1 / 1;    
+  object-fit: cover; 
+}
+
 #games button:hover {
 	box-shadow: 0 0 0 5px #dddddd;
 	transform: translateY(-5px);
