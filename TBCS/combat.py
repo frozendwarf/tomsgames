@@ -558,7 +558,12 @@ class Actor:
 #setIntelligence -- sets intelligence (intelligence-1 as its a list)
 #setWeights -- sets weights for certain moves
 #fight -- puts two actors in a fight
+opponents = {
+    "dummy" : Actor("dummy", 15, 12, 0.8, 0.9),
+    "doppelganger": Actor("Doppelganger", 20, 10, 1 ,0.9),
+    "dayem" : Actor("Dayem", 16, 50, 4, 0.75),
 
+}
 
 async def main():
     document.querySelector("#loading").remove()
@@ -566,21 +571,23 @@ async def main():
 
 
     player = Actor("Player", 20, 10, 1, 0.9)
-    dummy = Actor("dummy", 15, 12, 0.8, 0.9) #for testing
    
-    while True:   
+    while True:
         await ui.DisplayPlay()
         ui.setupInputListener()
-        ui.Output("choose your opponent: \n dummy")
+        ui.Clear()   
+        ui.Output("choose your opponent: \n dummy \n doppelganger \n dayem")
         opponent = await ui.Ask()
         ui.Clear()
 
         ui.Output("choose enemy intelligence, where 1 is smartest and 6 is dumbest")
         intelligence = await ui.Ask()
         ui.Clear()
-        if opponent == "dummy":
-            dummy.setIntelligence(int(intelligence))
-            await fight(player, dummy)
+        opponent.setIntelligence(int(intelligence))
+        await fight(player, opponents[opponent])
     
 
 asyncio.ensure_future(main())
+
+
+
